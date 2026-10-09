@@ -4,10 +4,10 @@
 
 ## Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Link repo (fork):
+- Họ tên: Vũ Đức Thiện
+- MSSV: 2A202602437
+- Email: vuthien3002@gmail.com
+- Link repo (fork): https://github.com/vuthien3002-sys/K4-Track4-Day23-VuDucthien-2A202602437-Sensor-Fusion-Student
 - Commit hash nộp (`git rev-parse HEAD`):
 
 ## Tóm tắt kết quả
