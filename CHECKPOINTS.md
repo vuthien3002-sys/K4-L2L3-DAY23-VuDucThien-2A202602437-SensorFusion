@@ -35,9 +35,9 @@ pytest student/tests -q
 fusion-run-lab --help
 ls data/Waymo/*.tfrecord data/weights/pretrained_fpn-resnet/*.pth
 ```
-- [ ] `pytest` không có dòng `failed`; test E–H báo `xfailed`.
-- [ ] `fusion-run-lab --help` in hướng dẫn, không lỗi import.
-- [ ] Thấy file `.tfrecord` và `.pth`.
+- [x] `pytest` không có dòng `failed`; test E–H báo `xfailed`.
+- [x] `fusion-run-lab --help` in hướng dẫn, không lỗi import.
+- [x] Thấy file `.tfrecord` và `.pth`.
 
 ---
 
@@ -57,7 +57,7 @@ ls data/Waymo/*.tfrecord data/weights/pretrained_fpn-resnet/*.pth
 ```bash
 pytest student/tests/test_kalman.py -v
 ```
-- [ ] Tất cả `passed`. Commit `CP1: ...`.
+- [x] Tất cả `passed`. Commit `CP1: ...`.
 
 ---
 
@@ -77,7 +77,7 @@ pytest student/tests/test_kalman.py -v
 ```bash
 pytest student/tests -v -k "camera_invalid or camera_front or camera_jacobian or camera_fov or student_camera"
 ```
-- [ ] Tất cả `passed`. Commit `CP2: ...`.
+- [x] Tất cả `passed`. Commit `CP2: ...`.
 
 ---
 
@@ -98,7 +98,7 @@ Lấy module Kalman bằng `load_workspace_module("kalman")`, không `import kal
 ```bash
 pytest student/tests -v -k "mahalanobis or greedy or out_of_fov or association"
 ```
-- [ ] Tất cả `passed`. Commit `CP3: ...`.
+- [x] Tất cả `passed`. Commit `CP3: ...`.
 
 ---
 
@@ -118,7 +118,7 @@ pytest student/tests -v -k "mahalanobis or greedy or out_of_fov or association"
 ```bash
 pytest student/tests -q
 ```
-- [ ] Không còn `failed` hay `xfailed`. Commit `CP4: ...`.
+- [x] Không còn `failed` hay `xfailed`. Commit `CP4: ...`.
 
 ---
 
@@ -139,9 +139,9 @@ pytest student/tests -q
 - Fused không bắt buộc tốt hơn LiDAR; nó **không được xấu hơn** quá 0.05 m (xem [RUBRIC.md](RUBRIC.md)).
 
 **Tự kiểm tra**
-- [ ] `metrics.json` có `"fusion_mode": "compare"`, `tracking.lidar` và `tracking.fused` đều khác `null`.
-- [ ] `tracking.lidar.rmse` ≤ 0.45 m là mức đầy đủ điểm; lớn hơn nhiều thì xem lại E–H.
-- [ ] Không sửa tay file trong `artifacts/`. Commit `CP5: ...` (gồm cả artifacts).
+- [x] `metrics.json` có `"fusion_mode": "compare"`, `tracking.lidar` và `tracking.fused` đều khác `null`.
+- [x] `tracking.lidar.rmse` ≤ 0.45 m là mức đầy đủ điểm; lớn hơn nhiều thì xem lại E–H.
+- [x] Không sửa tay file trong `artifacts/`. Commit `CP5: ...` (gồm cả artifacts).
 
 ---
 
@@ -155,4 +155,4 @@ pytest student/tests -q
 **Sản phẩm** — fork đã push; link repo và commit hash đã nộp trên LMS.
 
 **Tự kiểm tra**
-- [ ] `git status` sạch; `git log origin/main -1` trùng commit hash bạn nộp.
+- [x] `git status` sạch; `git log origin/main -1` trùng commit hash bạn nộp.
